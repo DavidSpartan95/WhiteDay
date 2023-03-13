@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_chocolate"
+    tools:context=".MainFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/orbitronbold"
+        android:textSize="25sp"
+        android:text="About" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/black"
+        android:text="learn more about white day" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_to_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:background="@color/white_chocolate"
+            android:clickable="true"
+            android:src="@drawable/ic_action_name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitronbold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="Play" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:textColor="@color/black"
+            android:text="play around with sweets from japan" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_to_functionality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white_chocolate"
+            android:clickable="true"
+            android:src="@drawable/ic_action_name" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

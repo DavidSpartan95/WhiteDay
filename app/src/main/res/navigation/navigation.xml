@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.whiteday.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.whiteday.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_functionalityActivity"
+            app:destination="@id/functionalityActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/newsletterActivity"
+        android:name="com.example.whiteday.NewsletterActivity"
+        android:label="activity_newsletter"
+        tools:layout="@layout/activity_newsletter" />
+    <activity
+        android:id="@+id/functionalityActivity"
+        android:name="com.example.whiteday.FunctionalityActivity"
+        android:label="activity_functionality"
+        tools:layout="@layout/activity_functionality" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.whiteday.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_newsletterActivity"
+            app:destination="@id/newsletterActivity" />
+    </fragment>
+</navigation>

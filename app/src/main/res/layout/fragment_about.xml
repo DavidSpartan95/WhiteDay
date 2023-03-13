@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_chocolate"
+    tools:context=".AboutFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chocolate_bar_pixel" />
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/appCompatCheckedTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:text="March 14th"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/appCompatCheckedTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/orbitron"
+            android:text="White Day is a Japanese holiday &#xA;where men give gifts to women&#xA; one month after Valentine's Day."
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitronbold"
+            android:text="Newsletter"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:layout_marginTop="8dp"
+            android:text="sign up and receive the latest&#xA;news about Japanse culture"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_to_newsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white_chocolate"
+            android:clickable="true"
+            android:src="@drawable/ic_action_name" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

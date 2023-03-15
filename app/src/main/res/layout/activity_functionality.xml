@@ -7,4 +7,70 @@
     android:background="@color/white_chocolate"
     tools:context=".FunctionalityActivity">
 
+    <TextView
+        android:id="@+id/txt_finctionality_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitronbold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="64dp"
+        android:text="PLAY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_finctionality_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="Click on sweets to animate"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_finctionality_title" />
+
+    <ImageView
+        android:id="@+id/img_strawberry"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_whiteStrawberry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/strawberry" />
+
+    <ImageView
+        android:id="@+id/img_whiteStrawberry"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whitestrawberry" />
+
+    <ImageView
+        android:id="@+id/img_chocolateBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_whiteStrawberry"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/chocolatebar" />
+
+    <ImageView
+        android:id="@+id/img_iceCream"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_whiteStrawberry"
+        app:srcCompat="@drawable/icecream" />
 </androidx.constraintlayout.widget.ConstraintLayout>

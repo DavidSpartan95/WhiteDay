@@ -7,14 +7,66 @@
     android:background="@color/cyan"
     tools:context=".NewsletterActivity">
 
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+
+        android:id="@+id/txt_newsLetter_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/orbitron"
+        android:text="Newsletter"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/txt_newsLetter_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:text="We are happy to see your intrest&#xA;in Japanese cultrue sign up to our&#xA;news letter by entering your maile&#xA;adress below ٩(◕‿◕｡)۶"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_newsLetter_tittle" />
+
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="283dp"
-        android:layout_height="116dp"
+        android:layout_width="293dp"
+        android:layout_height="69dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_newsletter_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="@color/white_chocolate"
+        android:background="@drawable/button"
+        android:fontFamily="@font/orbitron"
+        app:layout_constraintBottom_toTopOf="@+id/txt_newsletter_followers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/txt_newsletter_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/white_chocolate"
+        android:text=" Followers: 0 "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

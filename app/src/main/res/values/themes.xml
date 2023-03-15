@@ -3,9 +3,9 @@
     <style name="Theme.WhiteDay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="android:windowLightStatusBar">true</item>
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">#6a5638</item>
         <item name="colorPrimaryVariant">@color/white_chocolate</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">#6a5638</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/white_chocolate</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
